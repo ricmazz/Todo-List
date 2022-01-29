@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Lista de Tarefas";
+}
+
+<style>
+    .divTodo {
+        border: solid 1px #9f9a9a;
+        margin: 50px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .ulTarefas {
+        padding-top: 15px;
+        list-style-type: none;
+    }
+</style>
+
+<div>
+    <div class="text-center pt-5">
+        <h1 class="display-4">Lista de Tarefas</h1>
+    </div>
+    <div class="divTodo">
+        <div class="row">
+            <div class="col-12">
+                <input type="text" id="txtTarefa" value="" placeholder="Digite uma tarefa e dê enter para inseri-la na lista." style="width: 100%; border-radius: 5px; border-color: #f1ecec;" onkeyup="PressKey(event);" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="ulTarefas">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
